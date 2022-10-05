@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {{content-for "head"}}
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/ember-app.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/header.css">
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+    {{content-for "body-footer"}}
+    <script>var dynamicEndpoint;</script>
+    <script src="{{rootURL}}assets/dynamic-endpoint.js" integrity=""></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/ember-app.js"></script>
+  </body>
+</html>
